@@ -6,7 +6,6 @@ const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 
-
 const fs = require("fs");
 const inquirer = require("inquirer");
 
@@ -168,7 +167,7 @@ const addEmployee = () => {
       },
     ])
     .then((employeeData) => {
-      // data for employee types
+      // employee data types
 
       let { name, id, email, role, github, school, confirmAddEmployee } =
         employeeData;
@@ -194,17 +193,16 @@ const addEmployee = () => {
     });
 };
 
-// function to generate HTML page file using file system
+// generates HTML
 const writeFile = (data) => {
   fs.writeFile("./dist/index.html", data, (err) => {
     // if there is an error
     if (err) {
       console.log(err);
       return;
-      // when the profile has been created
     } else {
       console.log(
-        "Your team profile has been successfully created! Please check out the index.html"
+        "Your team profile has been successfully created in index.html!"
       );
     }
   });

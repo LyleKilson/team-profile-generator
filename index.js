@@ -1,4 +1,3 @@
-// page creation
 const generateHTML = require("./src/generateHTML");
 
 // profiles
@@ -11,7 +10,6 @@ const inquirer = require("inquirer");
 
 const teamArray = [];
 
-// start of manager prompts
 const addManager = () => {
   return inquirer
     .prompt([
@@ -167,8 +165,6 @@ const addEmployee = () => {
       },
     ])
     .then((employeeData) => {
-      // employee data types
-
       let { name, id, email, role, github, school, confirmAddEmployee } =
         employeeData;
       let employee;
@@ -193,10 +189,8 @@ const addEmployee = () => {
     });
 };
 
-// generates HTML
 const writeFile = (data) => {
   fs.writeFile("./dist/index.html", data, (err) => {
-    // if there is an error
     if (err) {
       console.log(err);
       return;

@@ -1,11 +1,12 @@
 //Intern card
 const generateIntern = function (intern) {
   return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+  <div class="col-4 mt-4">
+  <div class="card h-100">
+    <div class="card-header">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="fas fa-user-graduate"></i>
+                <h4>Intern</h4>
+                <i class="fas fa-user-graduate"></i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
@@ -24,7 +25,8 @@ const generateManager = function (manager) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="fas fa-id-badge"></i>
+                <h4>Manager</h4>
+                <i class="fas fa-id-badge"></i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -43,7 +45,8 @@ const generateEngineer = function (engineer) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="fas fa-glasses"></i>
+                <h4>Engineer</h4>
+                <i class="fas fa-glasses"></i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
@@ -112,14 +115,13 @@ const generateTeamPage = function (employeeCards) {
 
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <header class="text-center">
-      <div id="navbar">
-      h1 class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text"
-      >Team Profile</h1
-    >
-      </div>
-    </header>
+    <body>
+      <header>
+        <nav class="navbar" id="navbar">
+        <h1 class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text"
+        >Team Profile</h1>
+  </nav>
+</header>
     <main>
           <div class="container">
               <div class="row justify-content-center" id="team-cards">

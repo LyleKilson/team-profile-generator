@@ -77,9 +77,9 @@ const addManager = () => {
 
 const addEmployee = () => {
   console.log(`
-    =================
+    ============================
     Adding employees to the team
-    =================
+    ============================
     `);
 
   return inquirer
@@ -87,7 +87,7 @@ const addEmployee = () => {
       {
         type: "list",
         name: "role",
-        message: "Please choose your employee's role",
+        message: "Please choose the employee's role",
         choices: ["Engineer", "Intern"],
       },
       {

@@ -3,8 +3,9 @@
 }
 
 :root {
-  --primary: lightslategray;
-  --secondary: white;
+  --primary: rgb(34, 113, 192);
+  --secondary: rgb(255, 255, 255);
+  --tertiary: rgb(150, 150, 150);
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 
 .card-body {
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
 }
 
 .container {

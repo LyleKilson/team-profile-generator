@@ -12,14 +12,19 @@ Team Profile Generator is a [node.js](https://nodejs.org/en/) application that c
 - upon completion open the index.html file in the bowser to view your results
 
 ---
-## Demo
+## Jest Demo
+![Demo](./Jest.gif)
+
+Click [here](https://drive.google.com/file/d/18ZDyy9hN61xhV162QY_XNneJDJce4hEB/view) to open the Jest Demo video in a new tab.
+---
+## Application Demo
 ![Demo](./Demo.gif)
 
-Click [here](https://drive.google.com/file/d/1U4c4tLg-CSB2LbFFcuDqTkHIxDRzTWB0/view) to open the demo video in a new tab.
+Click [here](https://drive.google.com/file/d/1U4c4tLg-CSB2LbFFcuDqTkHIxDRzTWB0/view) to open the application demo video in a new tab.
 
 ---
 
-## Example
+## Application output example
 ![Examle](./example1.png)
 
 ---
